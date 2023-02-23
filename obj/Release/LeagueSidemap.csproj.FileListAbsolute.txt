@@ -1,0 +1,11 @@
+C:\Users\pecul\OneDrive\Desktop\DEVDEVDEV\LeagueSidemap\bin\Release\LeagueSidemap.exe.config
+C:\Users\pecul\OneDrive\Desktop\DEVDEVDEV\LeagueSidemap\bin\Release\LeagueSidemap.exe
+C:\Users\pecul\OneDrive\Desktop\DEVDEVDEV\LeagueSidemap\bin\Release\LeagueSidemap.pdb
+C:\Users\pecul\OneDrive\Desktop\DEVDEVDEV\LeagueSidemap\obj\Release\LeagueSidemap.csproj.AssemblyReference.cache
+C:\Users\pecul\OneDrive\Desktop\DEVDEVDEV\LeagueSidemap\obj\Release\LeagueSidemap.csproj.SuggestedBindingRedirects.cache
+C:\Users\pecul\OneDrive\Desktop\DEVDEVDEV\LeagueSidemap\obj\Release\LeagueSidemap.MainForm.resources
+C:\Users\pecul\OneDrive\Desktop\DEVDEVDEV\LeagueSidemap\obj\Release\LeagueSidemap.Properties.Resources.resources
+C:\Users\pecul\OneDrive\Desktop\DEVDEVDEV\LeagueSidemap\obj\Release\LeagueSidemap.csproj.GenerateResource.cache
+C:\Users\pecul\OneDrive\Desktop\DEVDEVDEV\LeagueSidemap\obj\Release\LeagueSidemap.csproj.CoreCompileInputs.cache
+C:\Users\pecul\OneDrive\Desktop\DEVDEVDEV\LeagueSidemap\obj\Release\LeagueSidemap.exe
+C:\Users\pecul\OneDrive\Desktop\DEVDEVDEV\LeagueSidemap\obj\Release\LeagueSidemap.pdb
