@@ -32,6 +32,12 @@
             this.MapBmp = new System.Windows.Forms.PictureBox();
             this.CameraTimer = new System.Windows.Forms.Timer(this.components);
             this.SettingsPannel = new System.Windows.Forms.Panel();
+            this.frameBox = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtbResY = new System.Windows.Forms.TextBox();
+            this.txtbResX = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SliderPosY = new System.Windows.Forms.TrackBar();
             this.SliderPosX = new System.Windows.Forms.TrackBar();
             this.SliderCaptureSize = new System.Windows.Forms.TrackBar();
@@ -40,10 +46,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.txtbResX = new System.Windows.Forms.TextBox();
-            this.txtbResY = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.MapBmp)).BeginInit();
             this.SettingsPannel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SliderPosY)).BeginInit();
@@ -65,12 +68,14 @@
             // 
             // CameraTimer
             // 
-            this.CameraTimer.Enabled = true;
             this.CameraTimer.Tick += new System.EventHandler(this.CameraTimer_Tick);
             // 
             // SettingsPannel
             // 
             this.SettingsPannel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SettingsPannel.Controls.Add(this.button3);
+            this.SettingsPannel.Controls.Add(this.frameBox);
+            this.SettingsPannel.Controls.Add(this.label5);
             this.SettingsPannel.Controls.Add(this.txtbResY);
             this.SettingsPannel.Controls.Add(this.txtbResX);
             this.SettingsPannel.Controls.Add(this.button2);
@@ -88,6 +93,67 @@
             this.SettingsPannel.Size = new System.Drawing.Size(330, 273);
             this.SettingsPannel.TabIndex = 1;
             this.SettingsPannel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.SettingsPannel_MouseClick);
+            // 
+            // frameBox
+            // 
+            this.frameBox.FormattingEnabled = true;
+            this.frameBox.Items.AddRange(new object[] {
+            "1",
+            "5",
+            "10",
+            "15",
+            "30",
+            "60"});
+            this.frameBox.Location = new System.Drawing.Point(215, 76);
+            this.frameBox.Name = "frameBox";
+            this.frameBox.Size = new System.Drawing.Size(84, 21);
+            this.frameBox.TabIndex = 13;
+            this.frameBox.Text = "1";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(212, 49);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(70, 13);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Capture Rate";
+            // 
+            // txtbResY
+            // 
+            this.txtbResY.Location = new System.Drawing.Point(215, 202);
+            this.txtbResY.Name = "txtbResY";
+            this.txtbResY.Size = new System.Drawing.Size(110, 20);
+            this.txtbResY.TabIndex = 11;
+            this.txtbResY.Text = "1080";
+            // 
+            // txtbResX
+            // 
+            this.txtbResX.Location = new System.Drawing.Point(215, 176);
+            this.txtbResX.Name = "txtbResX";
+            this.txtbResX.Size = new System.Drawing.Size(110, 20);
+            this.txtbResX.TabIndex = 10;
+            this.txtbResX.Text = "1920";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(215, 228);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(110, 23);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Set Resolution";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(302, 10);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(23, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // SliderPosY
             // 
@@ -155,41 +221,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Window Size";
             // 
-            // button1
+            // button3
             // 
-            this.button1.Location = new System.Drawing.Point(302, 10);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(23, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(215, 228);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Set Resolution";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // txtbResX
-            // 
-            this.txtbResX.Location = new System.Drawing.Point(215, 176);
-            this.txtbResX.Name = "txtbResX";
-            this.txtbResX.Size = new System.Drawing.Size(110, 20);
-            this.txtbResX.TabIndex = 10;
-            this.txtbResX.Text = "1920";
-            // 
-            // txtbResY
-            // 
-            this.txtbResY.Location = new System.Drawing.Point(215, 202);
-            this.txtbResY.Name = "txtbResY";
-            this.txtbResY.Size = new System.Drawing.Size(110, 20);
-            this.txtbResY.TabIndex = 11;
-            this.txtbResY.Text = "1080";
+            this.button3.Location = new System.Drawing.Point(215, 103);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "Set";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // MainForm
             // 
@@ -201,6 +241,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.Text = "YK\'s League SIDEMAP";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.Shown += new System.EventHandler(this.MainForm_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.MapBmp)).EndInit();
             this.SettingsPannel.ResumeLayout(false);
@@ -230,6 +271,9 @@
         private System.Windows.Forms.TextBox txtbResY;
         private System.Windows.Forms.TextBox txtbResX;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox frameBox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button3;
     }
 }
 

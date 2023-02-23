@@ -9,3 +9,14 @@ C:\Users\pecul\OneDrive\Desktop\DEVDEVDEV\LeagueSidemap\obj\Debug\LeagueSidemap.
 C:\Users\pecul\OneDrive\Desktop\DEVDEVDEV\LeagueSidemap\obj\Debug\LeagueSidemap.csproj.CoreCompileInputs.cache
 C:\Users\pecul\OneDrive\Desktop\DEVDEVDEV\LeagueSidemap\obj\Debug\LeagueSidemap.exe
 C:\Users\pecul\OneDrive\Desktop\DEVDEVDEV\LeagueSidemap\obj\Debug\LeagueSidemap.pdb
+C:\Users\pecul\OneDrive\Desktop\YK-s-League-SIDEMAP\bin\Debug\LeagueSidemap.exe.config
+C:\Users\pecul\OneDrive\Desktop\YK-s-League-SIDEMAP\bin\Debug\LeagueSidemap.exe
+C:\Users\pecul\OneDrive\Desktop\YK-s-League-SIDEMAP\bin\Debug\LeagueSidemap.pdb
+C:\Users\pecul\OneDrive\Desktop\YK-s-League-SIDEMAP\obj\Debug\LeagueSidemap.csproj.AssemblyReference.cache
+C:\Users\pecul\OneDrive\Desktop\YK-s-League-SIDEMAP\obj\Debug\LeagueSidemap.csproj.SuggestedBindingRedirects.cache
+C:\Users\pecul\OneDrive\Desktop\YK-s-League-SIDEMAP\obj\Debug\LeagueSidemap.MainForm.resources
+C:\Users\pecul\OneDrive\Desktop\YK-s-League-SIDEMAP\obj\Debug\LeagueSidemap.Properties.Resources.resources
+C:\Users\pecul\OneDrive\Desktop\YK-s-League-SIDEMAP\obj\Debug\LeagueSidemap.csproj.GenerateResource.cache
+C:\Users\pecul\OneDrive\Desktop\YK-s-League-SIDEMAP\obj\Debug\LeagueSidemap.csproj.CoreCompileInputs.cache
+C:\Users\pecul\OneDrive\Desktop\YK-s-League-SIDEMAP\obj\Debug\LeagueSidemap.exe
+C:\Users\pecul\OneDrive\Desktop\YK-s-League-SIDEMAP\obj\Debug\LeagueSidemap.pdb

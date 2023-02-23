@@ -36,6 +36,12 @@ namespace LeagueSidemap
         public int DisplayYSize = 350;
 
         public bool IsSettingsShown = false;
+
+
+        public int CaptureRate = 10;
+        Bitmap bmpm;
+        Graphics g;
+        Rectangle rect;
         public MainForm()
         {
             InitializeComponent();
@@ -43,13 +49,25 @@ namespace LeagueSidemap
 
         private void CameraTimer_Tick(object sender, EventArgs e)
         {
+            
             SliderPosY.Maximum = ResY - CameraYSize;
             SliderPosX.Maximum = ResX - CameraXSize;
-            Rectangle rect = new Rectangle(SliderPosX.Value, SliderPosY.Value, CameraXSize, CameraYSize);
-            Bitmap bmp = new Bitmap(rect.Width, rect.Height, PixelFormat.Format32bppArgb);
-            Graphics g = Graphics.FromImage(bmp);
-            g.CopyFromScreen(rect.Left, rect.Top, 0, 0, bmp.Size, CopyPixelOperation.SourceCopy);
-            MapBmp.Image = bmp;
+            rect = new Rectangle(SliderPosX.Value, SliderPosY.Value, CameraXSize, CameraYSize);
+            bmpm = new Bitmap(rect.Width, rect.Height, PixelFormat.Format32bppArgb);
+            g = Graphics.FromImage(bmpm);
+            g.CopyFromScreen(rect.Left, rect.Top, 0, 0, bmpm.Size, CopyPixelOperation.SourceCopy);
+            if (MapBmp.Image != null)
+            {
+                MapBmp.Image.Dispose();
+            }
+            MapBmp.Image = bmpm;
+            g.Dispose();
+
+
+
+
+            
+
         }
 
 
@@ -71,6 +89,9 @@ namespace LeagueSidemap
             SliderPosX.Maximum = ResX- CameraXSize;
             SliderPosY.Minimum = 0;
             SliderPosY.Maximum = ResY - CameraYSize;
+
+            frameBox.SelectedIndex = 1;
+            CameraTimer.Enabled= true;
         }
 
         private void MapBmp_MouseDown(object sender, MouseEventArgs e)
@@ -138,6 +159,20 @@ namespace LeagueSidemap
         {
             ResX = int.Parse(txtbResX.Text);
             ResY = int.Parse(txtbResY.Text);
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+            CameraTimer.Enabled= false;
+            CameraTimer.Interval = 1000 / int.Parse(frameBox.SelectedItem.ToString());
+            CameraTimer.Enabled= true;
+            
         }
     }
 }
